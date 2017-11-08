@@ -9,8 +9,8 @@
     <body>
         <div id="app">
             <h1>XKCD Comics</h1>
-            <button> Next Comic </button>
-            <img src="https://imgs.xkcd.com/comics/thermostat.png"></img>
+            <button v-on:click="change_comic"> Next Comic </button>
+            <img v-bind:src="link"></img>
         </div>
     </body>
     <script src="https://unpkg.com/jquery"></script>
